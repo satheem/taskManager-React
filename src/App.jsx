@@ -4,7 +4,6 @@ import Card from "./components/Card";
 
 const App = () => {
   const [task, setTask] = useState([]);
-  console.log(task.length, task);
   const handleTaskChange = (newvalue) => {
     const newTaks = { id: Date.now(), name: newvalue, status: "incomplete" };
     setTask((prevTask) => [...prevTask, newTaks]);
